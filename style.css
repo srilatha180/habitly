@@ -1,0 +1,142 @@
+
+:root {
+    --primary-color: #0B1F3A;
+    --card-color: #F8FAFC;
+    --spacing: 10px;
+     --font-family: 'Inter', sans-serif;
+}
+.intro{
+    background-color: var(--primary-color);
+    padding-left: var(--spacing);
+    color: white;
+    margin-bottom: 8px;
+
+}
+.summary{
+    background-color: rgb(202, 198, 198);
+    
+   
+}
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:75%;
+    height: 120px;
+   text-align: center;
+  
+    margin-left: 15px;
+    
+   
+   
+}
+.sum{
+    width:400px;
+    height:80px;
+    margin-left: 30px;
+    background-color: var(--card-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+     border-radius: 12px;
+    justify-content: center;
+}
+.habits{
+    background-color:rgb(202, 198, 198); 
+    margin-bottom: 8px;
+    height:500px;
+}
+.card h3{
+    margin: 0px;
+}
+.card p{
+    padding-left: 15px;
+}
+.card{
+    display: flex;
+    height:80px;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 8px 8px 8px;
+    background-color: var(--card-color);
+    border-radius: 12px;
+    padding-right: var(--spacing);
+    transition: ease 0.3s;
+    font-family: var(--font-family);
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 8px black;
+    
+}
+.card button{
+   
+    background-color:#14B8A6;
+    color:white;
+    border-radius: 12px;
+    transform: translateX(-3px);
+}
+.card button:hover{
+    background-color: yellow;
+    color:black;
+}
+.final{
+    margin-top: 8px;
+    background-color:var(--primary-color);
+    text-align: center;
+    height:80px;
+    padding-top: 5px;
+    color:white;
+}
+@media (max-width: 360px){
+    .stats{
+        flex-direction: column;
+        margin: 20px 5px 5px 5px;
+        padding-top: 100px;
+        border-radius: 5px;
+        width:100%;
+       
+       
+       
+}
+}
+@media(max-width:360px){
+    .sum{
+        width:100%;
+        height:130px;
+        gap: 6px;
+        margin-top: 20px;
+        border-radius: 5px;
+        margin:8px 10px 5px 10px;
+         
+       
+
+    }
+    .summary{
+        height:400px;
+    }
+}
+.habits-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    gap:15px;
+}
+@media(max-width:360px){
+    .habits-card{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:8px;
+    }
+}
+@media(min-width:361px) and (max-width:768px){
+    .habits-card{
+     display: grid;
+     grid-template-columns:repeat(2, 1fr); 
+     gap:10px;
+     justify-content: center;
+     align-items: center;
+    }
+    
+}
+
+
