@@ -138,5 +138,54 @@
     }
     
 }
+.selected {
+    background-color: #e6d9ff;
+    border-radius: 8px;
+    border: 2px solid purple;
+}
+
+
+.user {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.user h2 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.user input {
+    height: 38px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.emoji-btn {
+    width: 42px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#myBtn {
+    height: 40px;
+    padding: 0 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0d9488;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
 
 
